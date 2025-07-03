@@ -2,7 +2,6 @@ import tempfile
 import os
 # Use a pipeline as a high-level helper
 from transformers import pipeline
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 # from pyngrok import ngrok, conf
@@ -48,4 +47,4 @@ def transcribe():
 #     return "Hello from Flask on Render!"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    app.run(host='0.0.0.0', port=5000)
