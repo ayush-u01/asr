@@ -1,10 +1,11 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-# from pyngrok import ngrok, conf
 import tempfile
 import os
 # Use a pipeline as a high-level helper
 from transformers import pipeline
+
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+# from pyngrok import ngrok, conf
 
 pipe = pipeline("automatic-speech-recognition", model="Oriserve/Whisper-Hindi2Hinglish-Prime")
 
