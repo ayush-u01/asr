@@ -2,5 +2,5 @@ services:
   - type: web
     name: flask-asr
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install flask transformers flask-cors
     startCommand: python app.py
